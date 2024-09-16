@@ -5,8 +5,8 @@ edition = "2021"
 
 [dependencies]
 anyhow = "1.0"
-macroquad = { git = "https://github.com/Mivik/prpr-macroquad", default-features = false }
+macroquad = { git = "https://github.com/364hao/prpr-macroquad", default-features = false }
 prpr = { path = "../prpr" }
 serde_yaml = "0.9"
 tokio = "*"
-sasa = { git = "https://github.com/Mivik/sasa" }
+sasa = { git = "https://github.com/Mivik/sasa", rev = "11bd96a" }

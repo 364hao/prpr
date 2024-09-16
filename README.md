@@ -1,4 +1,4 @@
-# prpr - <ins>P</ins>hig<ins>R</ins>os <ins>P</ins>layer, written in <ins>R</ins>ust
+# **prpr构建修复**
 
 [中文文档](https://mivik.moe/prpr-docs)
 

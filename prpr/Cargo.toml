@@ -26,8 +26,8 @@ image = "0.24"
 intl-memoizer = "0.5.1"
 lru = "0.9.0"
 lyon = "1.0.1"
-macroquad = { git = "https://github.com/Mivik/prpr-macroquad", default-features = false }
-miniquad = { git = "https://github.com/Mivik/prpr-miniquad" }
+macroquad = { git = "https://github.com/364hao/prpr-macroquad", default-features = false }
+miniquad = { git = "https://github.com/Mivik/prpr-miniquad", rev = "fc11d43" }
 nalgebra = "*"
 once_cell = "1.16.0"
 ordered-float = "3.4.0"
@@ -61,10 +61,10 @@ block = "0.1.6"
 
 [target.'cfg(target_os = "android")'.dependencies]
 ndk-context = "0.1"
-sasa = { git = "https://github.com/Mivik/sasa", default-features = false, features = ["oboe"] }
+sasa = { git = "https://github.com/Mivik/sasa", rev = "11bd96a", default-features = false, features = ["oboe"] }
 
 [target.'cfg(not(target_os = "android"))'.dependencies]
-sasa = { git = "https://github.com/Mivik/sasa" }
+sasa = { git = "https://github.com/Mivik/sasa", rev = "11bd96a"}
 
 [target.'cfg(not(target_arch = "wasm32"))'.dependencies]
 tokio = { version = "1.23", features = ["rt-multi-thread", "fs"] }

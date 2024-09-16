@@ -17,7 +17,7 @@ futures-util = "0.3.25"
 hex = "0.4.3"
 image = "*"
 lyon = "*"
-macroquad = { git = "https://github.com/Mivik/prpr-macroquad", default-features = false }
+macroquad = { git = "https://github.com/364hao/prpr-macroquad", default-features = false }
 md5 = "0.7"
 once_cell = "*"
 openssl = { version = "*", features = ["vendored"] }
@@ -34,10 +34,10 @@ uuid7 = "0.3.4"
 [target.'cfg(target_os = "android")'.dependencies]
 ndk-sys = "0.2"
 ndk-context = "0.1"
-sasa = { git = "https://github.com/Mivik/sasa", default-features = false, features = ["oboe"] }
+sasa = { git = "https://github.com/Mivik/sasa", rev = "11bd96a", default-features = false, features = ["oboe"] }
 
 [target.'cfg(not(target_os = "android"))'.dependencies]
-sasa = { git = "https://github.com/Mivik/sasa" }
+sasa = { git = "https://github.com/Mivik/sasa", rev = "11bd96a" }
 
 [target.'cfg(target_os = "ios")'.dependencies]
 objc = "*"
