@@ -97,11 +97,9 @@ impl Scene for MainScene {
                 }));
             }
             r.x += dx;
-            if ui.button("render", r, "渲染") {
-                *INFO_EDIT.lock().unwrap() = Some(self.edit.clone());
-                *VIDEO_CONFIG.lock().unwrap() = Some(self.v_config.clone());
-                self.next_scene = Some(NextScene::Exit);
-            }
+            *INFO_EDIT.lock().unwrap() = Some(self.edit.clone());
+            *VIDEO_CONFIG.lock().unwrap() = Some(self.v_config.clone());
+            self.next_scene = Some(NextScene::Exit);
             self.scroll.render(ui, |ui| {
                 ui.dy(pad);
                 let r = ui.text("注：可以通过鼠标拖动屏幕来查看更下面的配置项").size(0.4).draw();

@@ -43,7 +43,7 @@ impl Default for VideoConfig {
             fps: 60,
             resolution: (1920, 1080),
             hardware_accel: false,
-            ending_length: 27.5,
+            ending_length: 5.0,
             bitrate: "7M".to_string(),
         }
     }
